@@ -16,17 +16,20 @@ app.get('/login', (req, res) => {
 });
 
 app.post('/login', (req, res) => {
+
+    console.log("LOGIN ROUTE WORKING");
+
     const username = req.body.username;
     const password = req.body.password;
 
-    console.log(username);
-    console.log(password);
+    console.log("USERNAME:", req.body.username);
+    console.log("PASSWORD:", req.body.password);
 
-    res.send('Login form submitted successfully!');
+    res.send('Login successful!');
 });
 
 console.log("POST ROUTE LOADED");
 
-app.listen(5000, () => {
-    console.log('Server running on port 5000');
+app.listen(5050, () => {
+    console.log('Server running on port 5050');
 });
