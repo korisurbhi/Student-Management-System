@@ -81,3 +81,30 @@ button:hover {
     font-size: 12px;
     margin-top: 25px;
 }
+
+.input-group select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    background: white;
+}
+
+.input-group select:focus {
+    border-color: #3157a4;
+}
+
+.login-links {
+    text-align: center;
+    margin-top: 20px;
+    line-height: 2;
+}
+
+.login-links a,
+.footer-text a {
+    color: #3157a4;
+    text-decoration: none;
+    font-weight: 600;
+}
